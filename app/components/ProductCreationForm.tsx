@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { createProduct } from '../services/productsService';

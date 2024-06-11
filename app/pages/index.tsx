@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { fetchProducts } from '../services/productsService';
@@ -11,9 +10,9 @@ const ProductsList = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div>
+    <div className="product-list">
       {data.map((product) => (
-        <div key={product.id}>
+        <div key={product.id} className="product-item">
           <h2>{product.title}</h2>
           <p>{product.price}</p>
         </div>
